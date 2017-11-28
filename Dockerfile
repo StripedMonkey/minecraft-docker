@@ -4,6 +4,7 @@ RUN curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastS
 RUN java -jar BuildTools.jar --rev 1.12.2
 ADD run.sh /run.sh
 ADD eula.txt /eula.txt
+ADD ops.json /ops.json
 ADD server.properties /server.properties
 EXPOSE 25565
 EXPOSE 25575
