@@ -6,6 +6,7 @@ ADD run.sh /run.sh
 ADD eula.txt /eula.txt
 ADD ops.json /ops.json
 ADD server.properties /server.properties
+ADD server-icon.png /server-icon.png
 EXPOSE 25565
 EXPOSE 25575
 CMD ["/run.sh"]
