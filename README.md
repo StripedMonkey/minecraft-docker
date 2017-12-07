@@ -9,8 +9,8 @@ You can run your own Minecraft server in a Docker container like this:
 
 To add a plugin, simply put the plugin in the plugins folder before you build
 
-There are a few things that need to be done still (PRs anyone? 😂)
+There are a few things that need to be done still
 
-* Ops file needs to be added & tokenized for ``sed``
+* ~~Ops file needs to be added & tokenized for ``sed``~~
 * ~~Rcon needs to be nabled & password tokenized for ``sed``~~
 * ~~Server description needs to be set~~
