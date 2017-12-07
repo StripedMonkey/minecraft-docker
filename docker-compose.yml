@@ -1,0 +1,9 @@
+version: "3"
+services:
+  minecraft-server:
+    build: .
+    env_file:
+      - vars.env
+    ports:
+    - "25565:25565"
+    - "25575:25575"
