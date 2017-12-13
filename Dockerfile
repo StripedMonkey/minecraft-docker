@@ -1,9 +1,9 @@
 FROM egeeio/minecraftserver
 
-COPY run.sh /home/minecraft/run.sh
-COPY cfg/eula.txt /home/minecraft/eula.txt
-COPY cfg/ops.json /home/minecraft/ops.json
-COPY cfg/server.properties /home/minecraft/server.properties
-#COPY server-icon.png /home/minecraft/server-icon.png
+COPY run.sh /opt/minecraft/run.sh
+COPY cfg/eula.txt /opt/minecraft/eula.txt
+COPY cfg/ops.json /opt/minecraft/ops.json
+COPY cfg/server.properties /opt/minecraft/server.properties
+#COPY server-icon.png /opt/minecraft/server-icon.png
 
-CMD ["/home/minecraft/run.sh"]
+CMD ["/opt/minecraft/run.sh"]
