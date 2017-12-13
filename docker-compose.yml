@@ -1,9 +1,19 @@
-version: "3"
+version: "2.3"
 services:
   minecraft-server:
+    # volumes:
+    #   # https://github.com/docker/compose/issues/3270
+    #   - ~/minecraft/EgeeLand:/home/minecraft/EgeeLand:Z
+    #   - ~/minecraft/EgeeLand_nether:/home/minecraft/EgeeLand_nether:Z
+    #   - ~/minecraft/EgeeLand_the_end:/home/minecraft/EgeeLand_the_end:Z
+    cpus: 0.4
+    mem_reservation: 1024m
     build: .
-    env_file:
-      - vars.env
+    environment:
+      MINECRAFT_PASSWORD: test
+    expose:
+      - "25565"
+      - "25575"
     ports:
     - "25565:25565"
     - "25575:25575"
