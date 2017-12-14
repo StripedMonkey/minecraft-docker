@@ -1,8 +1,9 @@
 # minecraft-docker - a Docker container configuration for Minecraft
 <a href="www.egee.io"><img src="https://i.imgur.com/4hBUTKM.png" alt="Minecraft on Docker" width="300" /></a>
 
-[![Build Status](https://travis-ci.org/egee-irl/minecraft-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/rust-docker)
-[![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](www.egee.io)
+[![Build Status](https://travis-ci.org/egee-irl/minecraft-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/minecraft-docker)
+[![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
+[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/minecraft-docker/blob/stable/LICENSE)
 
 Host your own dedicated game server and quick and simple as possible with one command:
 
@@ -69,4 +70,4 @@ If you have more than one server running, you will get logs for *all* of the ser
 
 If you want to output the logs to a file, you will want to use the regular ``docker logs`` command because ``docker-compose logs`` adds color and formating which does not translate well into actual log files:
 
-``docker logs rust-server_1 > my.log``
+``docker logs minecraft-server_1 > my.log``
