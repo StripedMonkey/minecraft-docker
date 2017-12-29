@@ -1,9 +1,15 @@
 version: "2.3"
 services:
   minecraft-server:
-    cpus: 0.4
-    mem_reservation: 1024m
-    build: .
+    volumes:
+      - ~/volumes/minecraft-server/server:/opt/minecraft/server:Z
+      - ~/volumes/minecraft-server/server_nether:/opt/minecraft/server_nether:Z
+      - ~/volumes/minecraft-server/server_the_end:/opt/minecraft/server_the_end:Z
+      - ~/volumes/minecraft-server/logs:/opt/minecraft/logs:Z
+    cpuset: 0-1
+    mem_reservation: 2048m
+    build:
+      context: .
     ports:
       - "25565:25565"
       - "25575:25575"
