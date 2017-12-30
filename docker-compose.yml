@@ -6,7 +6,7 @@ services:
       - ~/volumes/minecraft-server/server_nether:/opt/minecraft/server_nether:Z
       - ~/volumes/minecraft-server/server_the_end:/opt/minecraft/server_the_end:Z
       - ~/volumes/minecraft-server/logs:/opt/minecraft/logs:Z
-    cpuset: 0-1
+    cpuset: 0
     mem_reservation: 2048m
     build:
       context: .
