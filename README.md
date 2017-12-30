@@ -55,7 +55,7 @@ Hopefully by this point you are aware of the issues around updates. Using ``dock
 The Minecraft server is configured to use a **single** core and 2gb of ram. The Java process itself runs with the following parameters ``-Xms1G -Xmx1G -XX:MaxPermSize=128M``. If you find that this allocation is not sufficient for your server, feel free to increase them. The cpu & memory usage is defined in the ``docker-compose.yml`` and the Java process resource allocation is defined in the ``run.sh`` file.
 
 #### Server Name & Volume Location
-For all game server containers, volumes are defined for game & server data in the ``docker-compose.yml`` file under the ``volumes:`` section. Volumes are mapped to _folders_ and allow the Host and Guest to share data back and forth easily. The problem is that Minecraft creates server data folders based on the ``leve-name`` attribute in the ``server.properties`` file. This means that if/when you change your server name, you will also need to change (or disable) the path to the volumes on the Minecraft server.
+For all game server containers, volumes are defined for game & server data in the ``docker-compose.yml`` file under the ``volumes:`` section. Volumes are _folders_ on the host machine and allow the Host and Guest to share data back and forth easily. The problem is that Minecraft creates server data folders based on the ``leve-name`` attribute in the ``server.properties`` file. This means that if/when you change your server name, you will also need to change (or disable) the path to the volumes on the Minecraft server.
 
 The default level-name is ``server``. Notice in this example:
 
